@@ -1,0 +1,1 @@
+<?php $koneksi = mysqli_connect("localhost", "root", "", "modul7") or die("gagal koneksi"); ?>
