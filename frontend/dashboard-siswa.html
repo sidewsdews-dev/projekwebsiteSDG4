@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Dashboard Siswa | [NAMA SEKOLAH]</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar" aria-label="Identitas mahasiswa">
+      <div class="avatar" aria-hidden="true">R</div>
+      <div class="who"><strong>Raka Aditya Pratama</strong><span>NIM 27010001</span></div>
+      <dl>
+        <div>
+          <dt>Program studi</dt>
+          <dd>Teknik Informatika</dd>
+        </div>
+        <div>
+          <dt>Fakultas</dt>
+          <dd>Teknik</dd>
+        </div>
+        <div>
+          <dt>Angkatan</dt>
+          <dd>27</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>Aktif</dd>
+        </div>
+      </dl>
+      <a class="logout" href="login.html">Keluar</a>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div><small>Dashboard Siswa</small>
+          <h1>Halo, Raka</h1>
+        </div>
+        <div class="pill">Angkatan 27</div>
+      </div>
+      <div class="cards">
+        <section class="card">
+          <h2>Jadwal Hari Ini</h2>
+          <div class="row"><span>07.30 · Matematika</span><span>Bu Sari</span></div>
+          <div class="row"><span>09.15 · Bahasa Indonesia</span><span>Pak Andi</span></div>
+          <div class="row"><span>11.00 · Fisika</span><span>Bu Rina</span></div>
+        </section>
+        <section class="card">
+          <h2>Tugas Belum Dikumpulkan</h2>
+          <div class="row"><span>Laporan Praktikum Fisika</span><span>Tenggat 20 Nov</span></div>
+          <div class="row"><span>Esai Bahasa Indonesia</span><span>Tenggat 22 Nov</span></div>
+          <div class="row"><span>Latihan Soal Matematika</span><span>Tenggat 25 Nov</span></div>
+        </section>
+        <section class="card">
+          <h2>Nilai Terbaru</h2>
+          <div class="row"><span>Matematika</span><span>85</span></div>
+          <div class="row"><span>Bahasa Indonesia</span><span>88</span></div>
+          <div class="row"><span>Fisika</span><span>82</span></div>
+        </section>
+        <section class="card">
+          <h2>Rekap Absensi</h2>
+          <div class="row"><span>Hadir</span><span>42</span></div>
+          <div class="row"><span>Izin / Sakit</span><span>2</span></div>
+          <div class="row"><span>Alpa</span><span>0</span></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
