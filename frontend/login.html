@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Masuk | [NAMA SEKOLAH]</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+  <form class="login-card" id="form-login" novalidate>
+    <h1>Masuk ke Portal</h1>
+    <div class="field">
+      <label for="username">Username</label>
+      <input id="username" autocomplete="username" aria-describedby="pesan">
+    </div>
+    <div class="field">
+      <label for="password">Kata sandi</label>
+      <input id="password" type="password" autocomplete="current-password" aria-describedby="pesan">
+    </div>
+    <div class="field">
+      <select id="peran">
+        <option value="siswa">Siswa</option>
+        <option value="guru">Guru</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <p class="error" id="pesan" role="alert"></p>
+    <button class="btn" type="submit">Masuk</button>
+    <p class="hint">Lupa kata sandi? Hubungi Admin sekolah.</p>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
