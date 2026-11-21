@@ -1,269 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
-  <title>Dashboard Guru | [NAMA SEKOLAH]</title>
-  <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#12264A">
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%AB%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Dashboard Guru | SMA 4 CLOVER</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <a class="skip-link" href="#isi-utama">Lewati ke konten</a>
   <div class="app">
-    <aside class="sidebar profile" aria-label="Identitas guru">
-      <div class="avatar" role="img" aria-label="Foto guru">Foto</div>
-      <div class="who"><strong>[Nama Guru]</strong><span>[NIP]</span></div>
+    <aside class="sidebar" aria-label="Identitas Guru">
+      <div class="avatar" aria-hidden="true">S</div>
+      <div class="who">
+        <strong>Sari Wulandari, S.Pd.</strong>
+        <span>NIP 198503122010012001</span>
+      </div>
       <dl>
         <div>
-          <dt>Mata pelajaran</dt>
-          <dd>[Mata pelajaran]</dd>
+          <dt>Mata Pelajaran</dt>
+          <dd>Matematika</dd>
         </div>
         <div>
-          <dt>Wali kelas</dt>
-          <dd>[Kelas / -]</dd>
-        </div>
-        <div>
-          <dt>Jabatan</dt>
-          <dd>[Jabatan]</dd>
+          <dt>Wali Kelas</dt>
+          <dd>X-A</dd>
         </div>
         <div>
           <dt>Status</dt>
-          <dd>[Status guru]</dd>
+          <dd>Aktif</dd>
         </div>
       </dl>
       <a class="logout" href="login.html">Keluar</a>
     </aside>
-    <main class="main" id="isi-utama" tabindex="-1">
+
+    <main class="main">
       <div class="topbar">
-        <div><small>Dashboard Guru</small>
-          <h1 tabindex="-1">Halo, [Nama Guru]</h1>
+        <div>
+          <small>Dashboard Guru</small>
+          <h1>Halo, Bu Sari</h1>
         </div>
-        <div class="pill">[Tahun ajaran]</div>
+        <div class="pill">Tahun Ajaran 2026/2027</div>
       </div>
-      <nav class="tabs" aria-label="Menu guru"><a href="#ringkasan" data-tab="ringkasan">Ringkasan</a><a href="#jadwal"
-          data-tab="jadwal">Jadwal</a><a href="#materi" data-tab="materi">Materi</a><a href="#tugas"
-          data-tab="tugas">Tugas</a><a href="#nilai" data-tab="nilai">Nilai</a><a href="#absensi"
-          data-tab="absensi">Absensi</a></nav>
-      <div class="panel" data-panel="ringkasan">
-        <div class="actions-bar"><a class="btn btn-primary" href="#materi">Unggah Materi</a><a class="btn btn-primary"
-            href="#tugas">Buat Tugas</a><a class="btn btn-primary" href="#nilai">Input Nilai</a><a
-            class="btn btn-primary" href="#absensi">Kelola Absensi</a></div>
-        <div class="cards">
-          <section class="card">
-            <h2>Jadwal Mengajar Hari Ini</h2>
-            <div class="row"><span>[Jam] · [Kelas]</span><span>[Mata pelajaran]</span></div>
-            <div class="row"><span>[Jam] · [Kelas]</span><span>[Mata pelajaran]</span></div>
-            <div class="row"><span>[Jam] · [Kelas]</span><span>[Mata pelajaran]</span></div>
-          </section>
-          <section class="card">
-            <h2>Tugas yang Perlu Dinilai</h2>
-            <div class="row"><span>[Judul tugas] · [Kelas]</span><span>[jumlah] terkumpul</span></div>
-            <div class="row"><span>[Judul tugas] · [Kelas]</span><span>[jumlah] terkumpul</span></div>
-            <div class="row"><span>[Judul tugas] · [Kelas]</span><span>[jumlah] terkumpul</span></div>
-          </section>
-          <section class="card">
-            <h2>Kelas yang Diampu</h2>
-            <div class="row"><span>[Kelas]</span><span>[jumlah] siswa</span></div>
-            <div class="row"><span>[Kelas]</span><span>[jumlah] siswa</span></div>
-            <div class="row"><span>[Kelas]</span><span>[jumlah] siswa</span></div>
-          </section>
-          <section class="card">
-            <h2>Absensi Hari Ini</h2>
-            <div class="row"><span>Kelas belum diabsen</span><span>[jumlah]</span></div>
-            <div class="row"><span>Siswa tidak hadir</span><span>[jumlah]</span></div>
-          </section>
-        </div>
-      </div>
-      <div class="panel" data-panel="jadwal" hidden>
-        <h2 class="panel-title">Jadwal Mengajar</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Hari</th>
-                <th scope="col">Jam</th>
-                <th scope="col">Kelas</th>
-                <th scope="col">Mata pelajaran</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>[Hari]</td>
-                <td>[Jam]</td>
-                <td>[Kelas]</td>
-                <td>[Mata pelajaran]</td>
-              </tr>
-              <tr>
-                <td>[Hari]</td>
-                <td>[Jam]</td>
-                <td>[Kelas]</td>
-                <td>[Mata pelajaran]</td>
-              </tr>
-              <tr>
-                <td>[Hari]</td>
-                <td>[Jam]</td>
-                <td>[Kelas]</td>
-                <td>[Mata pelajaran]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel" data-panel="materi" data-add="Unggah Materi" hidden>
-        <h2 class="panel-title">Materi yang Diunggah</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Judul materi</th>
-                <th scope="col">Kelas</th>
-                <th scope="col">Tanggal unggah</th>
-                <th scope="col">Berkas</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>[Judul materi]</td>
-                <td>[Kelas]</td>
-                <td>[Tanggal unggah]</td>
-                <td>[Berkas]</td>
-              </tr>
-              <tr>
-                <td>[Judul materi]</td>
-                <td>[Kelas]</td>
-                <td>[Tanggal unggah]</td>
-                <td>[Berkas]</td>
-              </tr>
-              <tr>
-                <td>[Judul materi]</td>
-                <td>[Kelas]</td>
-                <td>[Tanggal unggah]</td>
-                <td>[Berkas]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel" data-panel="tugas" data-add="Buat Tugas" hidden>
-        <h2 class="panel-title">Tugas</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Judul tugas</th>
-                <th scope="col">Kelas</th>
-                <th scope="col">Tenggat</th>
-                <th scope="col">Terkumpul</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>[Judul tugas]</td>
-                <td>[Kelas]</td>
-                <td>[Tenggat]</td>
-                <td>[Terkumpul]</td>
-              </tr>
-              <tr>
-                <td>[Judul tugas]</td>
-                <td>[Kelas]</td>
-                <td>[Tenggat]</td>
-                <td>[Terkumpul]</td>
-              </tr>
-              <tr>
-                <td>[Judul tugas]</td>
-                <td>[Kelas]</td>
-                <td>[Tenggat]</td>
-                <td>[Terkumpul]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel" data-panel="nilai" data-add="Input Nilai" hidden>
-        <h2 class="panel-title">Input Nilai</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Nama siswa</th>
-                <th scope="col">Kelas</th>
-                <th scope="col">Harian</th>
-                <th scope="col">UTS</th>
-                <th scope="col">UAS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>[Nama siswa]</td>
-                <td>[Kelas]</td>
-                <td>[Harian]</td>
-                <td>[UTS]</td>
-                <td>[UAS]</td>
-              </tr>
-              <tr>
-                <td>[Nama siswa]</td>
-                <td>[Kelas]</td>
-                <td>[Harian]</td>
-                <td>[UTS]</td>
-                <td>[UAS]</td>
-              </tr>
-              <tr>
-                <td>[Nama siswa]</td>
-                <td>[Kelas]</td>
-                <td>[Harian]</td>
-                <td>[UTS]</td>
-                <td>[UAS]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="panel" data-panel="absensi" data-add="Tambah Absensi" hidden>
-        <h2 class="panel-title">Absensi Kelas</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Kelas</th>
-                <th scope="col">Tanggal</th>
-                <th scope="col">Hadir</th>
-                <th scope="col">Tidak hadir</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>[Kelas]</td>
-                <td>[Tanggal]</td>
-                <td>[Hadir]</td>
-                <td>[Tidak hadir]</td>
-              </tr>
-              <tr>
-                <td>[Kelas]</td>
-                <td>[Tanggal]</td>
-                <td>[Hadir]</td>
-                <td>[Tidak hadir]</td>
-              </tr>
-              <tr>
-                <td>[Kelas]</td>
-                <td>[Tanggal]</td>
-                <td>[Hadir]</td>
-                <td>[Tidak hadir]</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+      <div class="cards">
+        <section class="card">
+          <h2>Jadwal Mengajar Hari Ini</h2>
+          <div class="row">
+            <span>07.30 · X-A</span>
+            <span>Matematika</span>
+          </div>
+          <div class="row">
+            <span>09.15 · X-B</span>
+            <span>Matematika</span>
+          </div>
+          <div class="row">
+            <span>11.00 · XI-A</span>
+            <span>Matematika</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Tugas yang Perlu Dinilai</h2>
+          <div class="row">
+            <span>Latihan Soal Bab 3 · X-A</span>
+            <span>28 terkumpul</span>
+          </div>
+          <div class="row">
+            <span>Ulangan Harian · X-B</span>
+            <span>30 terkumpul</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Kelas yang Diampu</h2>
+          <div class="row">
+            <span>X-A</span>
+            <span>32 siswa</span>
+          </div>
+          <div class="row">
+            <span>X-B</span>
+            <span>31 siswa</span>
+          </div>
+          <div class="row">
+            <span>XI-A</span>
+            <span>30 siswa</span>
+          </div>
+        </section>
       </div>
     </main>
   </div>
+
   <script src="script.js"></script>
 </body>
 
