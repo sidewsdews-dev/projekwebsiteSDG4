@@ -99,7 +99,21 @@ a {
 .brand {
   font-weight: 700;
   font-size: 20px;
-  text-decoration: none
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.brand img {
+  height: 38px;
+  width: auto
+}
+
+.login-logo {
+  width: 64px;
+  height: auto;
+  align-self: center
 }
 
 .site-header nav {
@@ -118,7 +132,8 @@ a {
 }
 
 .hero {
-  background: var(--navy);
+  background: linear-gradient(rgba(18, 38, 74, .75), rgba(18, 38, 74, .75)), url(sekolah.jpg) center/cover no-repeat;
+  background-color: var(--navy);
   color: #fff;
   padding: 96px 64px;
   display: flex;
