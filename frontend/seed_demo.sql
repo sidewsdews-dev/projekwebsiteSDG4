@@ -1,19 +1,8 @@
--- =====================================================================
---  DATA CONTOH (demo). Jalankan SETELAH dataprojek.sql, lewat phpMyAdmin.
---  Password SEMUA akun demo: rahasia123
---
---  Login:  Admin -> username: admin              peran: Admin
---          Guru  -> NIP:      198001012005011001 peran: Guru
---                             197905152003121002
---          Siswa -> username: raka / dina / bima peran: Siswa
---  Akun menunggu persetujuan: siswa lia (NIS 27010004), guru NIP 199001012015011003
--- =====================================================================
 USE dataprojek;
 
 INSERT INTO mata_pelajaran (idmapel, nama_mapel) VALUES
  ('MTK','Matematika'), ('BIN','Bahasa Indonesia'), ('FIS','Fisika');
 
--- Hash bcrypt untuk 'rahasia123'
 INSERT INTO admin (nama, username, password, email) VALUES
  ('Siti Rahmawati','admin','rahasia123','admin@contoh.sch.id');
 
